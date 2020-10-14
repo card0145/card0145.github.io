@@ -13,6 +13,25 @@ footer{
 #my-image {
     box-shadow: 0 0 2px 1px black;
 } 
-ul {
+h3 ul {
     list-style: square;
+}
+
+h3 ul li:nth-child(odd) {
+    background-color: burlywood;
+
+}
+
+.nav-style {
+    list-style: none;
+    text-decoration: none;
+    background-color: gold;
+    border: hotpink;
+}
+
+
+nav ul :hover,
+nav ul :focus{
+    color: lavenderblush;
+
 }
