@@ -49,7 +49,6 @@ table {
             Custom Styles
 ------------------------------------------ */
 
-
 html{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -77,7 +76,8 @@ img {
 a,
 a:link,
 a:visited {
-    color: inherit
+    color: inherit;
+    
 }
 
 h1,
@@ -122,6 +122,7 @@ More Specific Stuff
 
 --------------------------------------------------------- */
 
+
 .banner h1 {
     font-size: 5.063rem;;
 }
@@ -139,19 +140,37 @@ More Specific Stuff
      padding: 20px;
      background-color: #c78c06 ;
      
-
  }
 
-.nav-list {
-    position: absolute;
-    left: 50%;
-    
-    
 
+.nav-list {
+    font-size: 16px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-list > * {
+    flex: 4;
+}
+
+.nav-list a {
+    color: #c78c06;
+    text-decoration: none;
+}
+.nav-list .home a {
+    color: #222;
+}
+.main-nav form {
+    display: flex;
+    flex-direction: row;
 
 }
 
-
+.main-nav form input {
+    flex: 4;
+}
 
 
  .our-services {
@@ -174,7 +193,7 @@ More Specific Stuff
 
 .site-header .container {
     background-color: #c78c06;
-    height: 300px;
+    height: 150px;
     
 }
 
@@ -242,6 +261,23 @@ More Specific Stuff
 
 
 }
+
+.our-services a i {
+    font-size: 14px;
+}
+
+.our-vision-page a i {
+    font-size: 14px;
+}
+
+.banner a i {
+    font-size: 14px;
+}
+
+
+
+
+
 /* -------------- our vision ----------------- */
 
 .our-vision-page {
