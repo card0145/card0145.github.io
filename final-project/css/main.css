@@ -1,0 +1,343 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---------------------------------------
+            Custom Styles
+------------------------------------------ */
+
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px ;
+
+  }
+
+
+body {
+    line-height: 1.5;
+}
+
+
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+    line-height: inherit;
+  }
+
+img {
+    width: 100%;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+    font-weight: bold;
+    
+
+}
+
+h1 {
+    font-size: 3.375rem;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+  
+  p {
+    margin: 1em 0;
+  }
+
+  
+/* ------------------------------------------------------
+
+More Specific Stuff
+
+--------------------------------------------------------- */
+
+.banner h1 {
+    font-size: 5.063rem;;
+}
+
+ .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+ }
+
+ .banner a {
+     text-decoration: none;
+     font-size: 18px;
+     display: inline-block;
+     padding: 20px;
+     background-color: #c78c06 ;
+     
+
+ }
+
+.nav-list {
+    position: absolute;
+    left: 50%;
+    
+    
+
+
+}
+
+
+
+
+ .our-services {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+
+ }
+
+ .site-header {
+     padding: 1em;
+     background-color: #222;
+     height:400px
+ }
+.site-header img{
+    width: 100px;
+}
+
+
+.site-header .container {
+    background-color: #c78c06;
+    height: 300px;
+    
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ /* ------------------ banner -------------------- */
+
+ .banner{
+    background-image: url("../images/main-banner.jpg");
+     background-size: cover;
+     height: 600px;
+     
+ }
+
+.banner .container h1,
+.banner .container p {
+    color: white;
+}
+
+
+
+.banner .container {
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 150px;
+
+
+}
+
+.block {
+    background-color: #ffe6ac;
+}
+
+
+ /*-------------- our services ---------------  */
+
+
+.our-services .container{
+    background-color: #ffe6ac;
+    margin: 1em auto;   
+    padding: 0;
+}
+
+.our-services .info-box {
+    padding: 1em;
+
+}
+.our-services a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #222 ;
+
+
+}
+/* -------------- our vision ----------------- */
+
+.our-vision-page {
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+}
+
+.our-vision-page h2,
+.our-vision-page p {
+
+    color: white;
+}
+.our-vision-page a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    border: 1px solid #c78c06; 
+}
+
+
+/* ------------- our team ----------------------- */
+
+.our-team-page .container {
+    background-color: #ffe6ac;
+    margin: 1em auto;   
+    padding: 0;
+}
+
+.our-team-page  .info-box {
+    padding: 1em;
+   
+}
+.our-team-page h3 {
+    border-bottom: 2px solid #c78c06 ;
+}
+
+/* --------------contact us------------------------------------------------------ */
+
+
+
+/* ---------------hours --------------- */
+
+.hours table td,
+.hours table th {
+    border: 1px solid black;
+}
+.hours table th {
+    background-color: #ffe6ac;
+    padding: 1em 1em;
+}
+
+.hours td {
+    padding: 1em 1em;
+}
+
+.hours table {
+    width: 100%;
+}
+
+.send-message form {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #c78c06;
+    background-color:  black;
+    border: black;
+    width: 50px;
+}
+
+form input, textarea{
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+form > * {
+    padding: 2px;
+}
+    
+
+/* -------------- Footer-------------------------------------------------------- */
+.site-footer {
+    background-color: #222;
+    color: #c78c06;
+}
+
+.site-footer a {
+    background-color: inherit;
+    font-size: inherit;
+    display: inline;
+    padding: inherit;
+    text-decoration: underline;
+}
