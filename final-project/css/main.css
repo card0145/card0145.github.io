@@ -1,47 +1,132 @@
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -49,12 +134,12 @@ table {
             Custom Styles
 ------------------------------------------ */
 
-html{
+html {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px ;
+    font-size: 12px;
 
-  }
+}
 
 
 body {
@@ -62,12 +147,12 @@ body {
 }
 
 
-  *,
-  *:before,
-  *:after{
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     line-height: inherit;
-  }
+}
 
 img {
     max-width: 1200px;
@@ -78,7 +163,7 @@ a,
 a:link,
 a:visited {
     color: inherit;
-    
+
 }
 
 h1,
@@ -88,35 +173,35 @@ h4,
 h5 {
 
     font-weight: bold;
-    
+
 
 }
 
 h1 {
     font-size: 3.375rem;
-  }
-  
-  h2 {
-    font-size: 2.25rem;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-  }
-  
-  h4 {
-    font-size: 1.5rem;
-  }
-  
-  h5 {
-    font-size: 1rem;
-  }
-  
-  p {
-    margin: 1em 0;
-  }
+}
 
-  
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+}
+
+
 /* ------------------------------------------------------
 
 More Specific Stuff
@@ -125,23 +210,24 @@ More Specific Stuff
 
 
 .banner h1 {
-    font-size: 5.063rem;;
+    font-size: 5.063rem;
+    ;
 }
 
- .container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
- }
+}
 
- .banner a {
-     text-decoration: none;
-     font-size: 18px;
-     display: inline-block;
-     padding: 20px;
-     background-color: #c78c06 ;
-     
- }
+.banner a {
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #c78c06;
+
+}
 
 
 .nav-list {
@@ -152,7 +238,7 @@ More Specific Stuff
     align-items: center;
 }
 
-.nav-list > * {
+.nav-list>* {
     flex: 4;
 }
 
@@ -160,9 +246,11 @@ More Specific Stuff
     color: #c78c06;
     text-decoration: none;
 }
+
 .nav-list .home a {
     color: #222;
 }
+
 .main-nav form {
     display: flex;
     flex-direction: row;
@@ -174,20 +262,21 @@ More Specific Stuff
 }
 
 
- .our-services {
+.our-services {
 
     max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
 
- }
+}
 
- .site-header {
-     padding: 1em;
-     background-color: #222;
-     height:400px
- }
-.site-header img{
+.site-header {
+    padding: 1em;
+    background-color: #222;
+    height: 400px
+}
+
+.site-header img {
     width: 100px;
 }
 
@@ -195,11 +284,10 @@ More Specific Stuff
 .site-header .container {
     background-color: #c78c06;
     height: 150px;
-    
+
 }
 
 
- 
 
 
 
@@ -210,14 +298,15 @@ More Specific Stuff
 
 
 
- /* ------------------ banner -------------------- */
 
- .banner{
+/* ------------------ banner -------------------- */
+
+.banner {
     background-image: url("../images/main-banner.jpg");
-     background-size: cover;
-     height: 600px;
-     
- }
+    background-size: cover;
+    height: 600px;
+
+}
 
 .banner .container h1,
 .banner .container p {
@@ -239,12 +328,12 @@ More Specific Stuff
 }
 
 
- /*-------------- our services ---------------  */
+/*-------------- our services ---------------  */
 
 
-.our-services .container{
+.our-services .container {
     background-color: #ffe6ac;
-    margin: 1em auto;   
+    margin: 1em auto;
     padding: 0;
 }
 
@@ -252,13 +341,14 @@ More Specific Stuff
     padding: 1em;
 
 }
+
 .our-services a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     display: inline-block;
     padding: 20px;
-    background-color: #222 ;
+    background-color: #222;
 
 
 }
@@ -285,7 +375,8 @@ More Specific Stuff
     background-image: url(../images/vision.jpg);
     height: 250px;
     background-size: cover;
-   
+    background-position: 50% 50%;
+
 }
 
 .our-vision-page h2,
@@ -293,14 +384,15 @@ More Specific Stuff
 
     color: white;
 }
+
 .our-vision-page a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     display: inline-block;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6) ;
-    border: 1px solid #c78c06; 
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #c78c06;
 }
 
 
@@ -308,16 +400,23 @@ More Specific Stuff
 
 .our-team-page .container {
     background-color: #ffe6ac;
-    margin: 1em auto;   
+    margin: 1em auto;
     padding: 0;
 }
 
-.our-team-page  .info-box {
+.our-team-page .info-box {
     padding: 1em;
-   
+
 }
+
 .our-team-page h3 {
-    border-bottom: 2px solid #c78c06 ;
+    border-bottom: 2px solid #c78c06;
+
+}
+
+.container2,
+.container4 {
+    background-color: #ffe6ac;
 }
 
 /* --------------contact us------------------------------------------------------ */
@@ -330,6 +429,7 @@ More Specific Stuff
 .hours table th {
     border: 1px solid black;
 }
+
 .hours table th {
     background-color: #ffe6ac;
     padding: 1em 1em;
@@ -352,20 +452,21 @@ form button {
     margin-top: 10px;
     font-size: 15px;
     color: #c78c06;
-    background-color:  black;
+    background-color: black;
     border: black;
     width: 50px;
 }
 
-form input, textarea{
+form input,
+textarea {
     border: 1px solid grey;
     border-radius: 3px;
 }
 
-form > * {
+form>* {
     padding: 2px;
 }
-    
+
 
 /* -------------- Footer-------------------------------------------------------- */
 .site-footer {
@@ -388,15 +489,15 @@ form > * {
 ========================================================================
 ========================================================================*/
 
-@media screen and (min-width: 760px){
+@media screen and (min-width: 760px) {
 
     .site-header {
-        height: 250px;
+        height: 150px;
     }
 
     .site-header .container {
         background-color: #222;
-        
+
 
     }
 
@@ -409,18 +510,35 @@ form > * {
         height: 20px;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        justify-content: center ;
+
     }
-    
-    .nav-list > * {
-        flex: 5;
-    }
+
 
     .main-nav {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    .nav-list {
+        flex: 2;
+    }
+
+    .nav-list a:hover {
+
+            color: #222;
+            text-decoration: none;
+            display: inline-block;
+            padding: 15px;
+            background-color: #c78c06;
+        
+        }
+    
+
+
+
 
     /* ----------- banner ---------------------------------- */
 
@@ -433,7 +551,7 @@ form > * {
         align-items: flex-start;
     }
 
- 
+
 
 
     /* --------------------- our services -------------------- */
@@ -449,7 +567,13 @@ form > * {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2em;
     }
- 
+
+    .info-box {
+
+        display: flex;
+        flex-direction: column;
+    }
+
     /* ------------------------- our team ---------------------- */
 
 
@@ -466,8 +590,8 @@ form > * {
     }
 
     .container4 {
-        background-color:  #ffe6ac;
-        grid-area: 2 / 1 / 3 / 2 
+        background-color: #ffe6ac;
+        grid-area: 2 / 1 / 3 / 2
     }
 
     /* ------------------------------ contact--------------------------- */
@@ -475,16 +599,15 @@ form > * {
     .send-message {
         padding: 1em;
     }
+
     .contact-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+
     }
 
     .hours {
         grid-area: 2 / 1 / 3 / 3
-
-
     }
 
 
