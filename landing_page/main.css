@@ -1,0 +1,25 @@
+@font-face {
+    src: url(fonts/Montserrat-Regular.ttf);
+    font-family: montserrat;
+}
+
+body {
+    font-family: montserrat;
+    background-color: #f7f7ff;
+}
+
+header img {
+
+    width: 118px;
+    height: 118px;
+
+}
+
+header,
+main,
+footer{
+
+    width: 1639px;
+    margin: auto 139px;
+
+}
