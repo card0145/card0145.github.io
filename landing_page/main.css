@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f7f7ff;
+    
 }
 
 header img {
@@ -36,14 +37,13 @@ p {
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
-    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
 }
 
 p {
     grid-column: 1/2;
     grid-row: 2/3
-
 }
 
 .container{
@@ -51,21 +51,12 @@ p {
     grid-row: 1/3
 }
     
-
-
-
-
 .container {
     background-color: white;
+    padding: 42px;
     display: flex;
     flex-direction: column;
-   
-}
-
-
-main form {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-around;
    
 }
 
@@ -74,6 +65,10 @@ main form {
 main .g {
     display: flex;
     flex-direction: row;
+}
+
+main .g p {
+    font-size: 11px;
 }
 
 main .e {
@@ -88,4 +83,8 @@ footer {
     background-color: #fffd8c;
     display: flex;
     justify-content: space-between;
+}
+
+footer form {
+    display: flex;
 }
