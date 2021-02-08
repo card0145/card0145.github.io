@@ -17,9 +17,11 @@ footer {
     margin: 0 139px;
 
 }
-
-main {
-    height: auto;
+h1 {
+    margin: 0;
+}
+h2 {
+   padding: 0px;
 }
 
 main h1 {
@@ -53,14 +55,28 @@ p {
     
 .container {
     background-color: white;
+    border-radius: 20px;
     padding: 42px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
    
 }
+.container input {
+    border: none;
+    appearance: none;
+    background: #f4f4f5;
+    padding: 12px;
+    border-radius: 6px;
+}
 
+input::placeholder,
+input::-moz-placeholder,
+input::-ms-input-placeholder,
+input::-webkit-input-placeholder {
+    font-family: montserrat;
 
+}
 
 main .g {
     display: flex;
