@@ -1,18 +1,13 @@
-@font-face {
-    src: url(fonts/Montserrat-Regular.ttf);
-    font-family: montserrat;
-}
+
 
 body {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f7f7ff;
 }
 
 header img {
-
     width: 118px;
     height: 118px;
-
 }
 
 header,
@@ -22,4 +17,21 @@ footer{
     width: 1639px;
     margin: auto 139px;
 
+}
+
+main h1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: #333131;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
 }
