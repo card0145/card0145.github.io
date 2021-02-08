@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f7f7ff;
@@ -12,11 +10,15 @@ header img {
 
 header,
 main,
-footer{
+footer {
 
-    width: 1639px;
-    margin: auto 139px;
+    width: auto;
+    margin: 0 139px;
 
+}
+
+main {
+    height: auto;
 }
 
 main h1 {
@@ -31,7 +33,59 @@ p {
     color: #333131;
 }
 
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 2fr 1fr;
+}
+
+p {
+    grid-column: 1/2;
+    grid-row: 2/3
+
+}
+
+.container{
+    grid-column: 3/4;
+    grid-row: 1/3
+}
+    
+
+
+
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
 main form {
     display: flex;
     flex-direction: column;
+   
+}
+
+
+
+main .g {
+    display: flex;
+    flex-direction: row;
+}
+
+main .e {
+    display: flex;
+}
+
+main .e input {
+    order: -111;
+}
+
+footer {
+    background-color: #fffd8c;
+    display: flex;
+    justify-content: space-between;
 }
