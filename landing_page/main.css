@@ -19,7 +19,7 @@ footer {
 
 }
 h1 {
-    margin: 0;
+    margin: 0px;
 }
 h2 {
    padding: 0px;
@@ -39,9 +39,11 @@ p {
 
 
 main {
+    height:542px;
     background-image: url(../images/bg-image/scooter-copy.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -136,7 +138,6 @@ main .e input {
 footer {
     background-color: #fffd8c;
     height: 181px;
-    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
@@ -183,5 +184,33 @@ footer button {
 }
 
 @media screen and (max-width: 768px) {
-    
+
+header,
+main,
+footer {
+padding-right: 50px;
+padding-left: 50px;
 }
+
+main {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    background-size: 300px 300px;
+    background-position: 50% 34%;
+    padding-top: 25px;
+}
+
+.container {
+    margin-top: 200px;
+}
+
+footer {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+} 
+
+@media screen and (max-width: 375px)
