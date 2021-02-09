@@ -283,10 +283,12 @@ footer button {
 }
 
 .social {
-    width: 100%
+    display: none;
 }
 
-
+.social-2 {
+    display: flex;
+}
 
 
 
