@@ -2,6 +2,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f7f7ff;
+
 }
 
 header img {
@@ -14,7 +15,7 @@ main,
 footer {
 
     width: auto;
-    margin: 0 139px;
+    padding: 0 139px;
 
 }
 h1 {
@@ -38,6 +39,9 @@ p {
 
 
 main {
+    background-image: url(../images/bg-image/scooter-copy.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -56,6 +60,7 @@ p {
     
 .container {
     background-color: white;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.5);
     border-radius: 20px;
     padding: 42px;
     display: flex;
@@ -85,7 +90,11 @@ main .container > * {
     font-size: 23px;
     font-weight: bold;
 }
+.container label {
+    font-size: 13px;
+    padding: 0 5px;
 
+}
 input::placeholder {
     font-family: montserrat;
 
@@ -126,6 +135,8 @@ main .e input {
 
 footer {
     background-color: #fffd8c;
+    height: 181px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
@@ -133,4 +144,44 @@ footer {
 
 footer form {
     display: flex;
+}
+
+footer input {
+    border: none;
+    appearance: none;
+    background: #f4f4f5;
+    padding: 12px;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+footer button {
+    width: 220px;
+    border: none;
+    appearance: none;
+    background: #ff8480;
+    color: white;
+    padding: 6px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.aa {
+    width: 121px;
+}
+
+.bb {
+    width: 259px;
+}
+
+.social {
+    width: 259px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    
 }
