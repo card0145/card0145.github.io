@@ -185,6 +185,10 @@ footer button {
 
 @media screen and (max-width: 768px) {
 
+p.4 {
+    display: none;
+}    
+
 header,
 main,
 footer {
@@ -213,4 +217,82 @@ footer {
 
 } 
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 375px) {
+
+    /* hiding text */
+.p3 {
+    display: none;
+}
+
+
+main p {
+    font-size: 17px;
+}
+
+main {
+    background-position: 50% 44%;
+}
+
+header,
+main,
+footer {
+    padding-right: 25px;
+    padding-left: 25px;
+   
+}
+
+.container {
+    padding: 20px;
+    margin-top: 250px;
+}
+
+.g {
+    flex-wrap: wrap;
+}
+
+/* aligning label to checkbox */
+.container label {
+    padding-top: 6px;
+}
+
+footer {
+    margin-top: 50px;
+    height: 300px;
+    padding-bottom: 25px;
+}
+/* placing button bellow input boxes */
+footer form {
+    flex-wrap: wrap;
+}
+
+.aa {
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.bb {
+    flex-grow: 1;
+    width: 160px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+}
+
+footer button {
+    width: 100%;
+}
+
+.social {
+    width: 100%
+}
+
+
+
+
+
+
+
+
+
+}
+
