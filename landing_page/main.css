@@ -38,6 +38,7 @@ p {
 
 
 main {
+    padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr;
@@ -94,8 +95,19 @@ main .g {
     display: flex;
     flex-direction: row;
 }
-main .g:nth-child(2){
-    color: pink;
+/* adding space between both p's */
+.p1 {
+    margin-right: 4px;
+}
+
+.p2 {
+    color: #ff8480;
+}
+
+.p1, 
+.p2 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
