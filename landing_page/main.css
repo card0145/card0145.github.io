@@ -16,8 +16,18 @@ footer {
 
     width: auto;
     padding: 0 139px;
-
 }
+/* hiding mobile/tablet icon set */
+.social-2 {
+    display: none;
+}
+
+/* hidding mobile/tablet form subheading  */
+.p4 {
+    display: none;
+}
+ 
+
 h1 {
     margin: 0px;
 }
@@ -74,6 +84,7 @@ main .container > * {
     margin: 5px 0px;
 }
 .container input {
+    height: 20px;
     border: none;
     appearance: none;
     background: #f4f4f5;
@@ -95,32 +106,22 @@ main .container > * {
 .container label {
     font-size: 13px;
     padding: 0 5px;
-
+    padding-top: 6px;
 }
+
 input::placeholder {
     font-family: montserrat;
-
 }
 
-main .g {
-    display: flex;
-    flex-direction: row;
-}
-/* adding space between both p's */
+
 .p1 {
-    margin-right: 4px;
+    display: inline;
 }
 
 .p2 {
     color: #ff8480;
+    display: inline;
 }
-
-.p1, 
-.p2 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 
 main .g p {
     font-size: 11px;
@@ -130,14 +131,14 @@ main .g p {
 main .e {
     display: flex;
 }
-
+/* moving checkbox infront of label */
 main .e input {
     order: -111;
 }
 
 footer {
     background-color: #fffd8c;
-    height: 181px;
+    height: 200px;
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
@@ -180,14 +181,51 @@ footer button {
 .social {
     width: 259px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
+.social img {
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width: 1272px){
+
+.calculator {
+    width: 300px;
+}
+
+
+
+}
+
+/* ------------------------ Tablet -------------------------- */
+
 @media screen and (max-width: 768px) {
 
-p.4 {
+
+
+/* hiding mobile icons in footer */
+.social {
     display: none;
 }    
+
+.social-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 20px;
+}
+
+.social-2 > * {
+    color: #333131 ;
+    font-size: 40px;
+}
+
+
+/* hiding alternative mobile text from form */
+
 
 header,
 main,
@@ -215,9 +253,23 @@ footer {
     flex-direction: column;
 }
 
-} 
+footer form {
+    margin: auto;
+    
+}
 
-@media screen and (max-width: 375px) {
+
+.social-2 {
+    margin: 10px auto;
+}
+
+
+
+
+
+/* ------------------------ Mobile ----------------------------- */
+
+@media screen and (max-width: 600px) {
 
     /* hiding text */
 .p3 {
@@ -250,10 +302,6 @@ footer {
     flex-wrap: wrap;
 }
 
-/* aligning label to checkbox */
-.container label {
-    padding-top: 6px;
-}
 
 footer {
     margin-top: 50px;
@@ -289,6 +337,8 @@ footer button {
 .social-2 {
     display: flex;
     justify-content: space-around;
+    margin: 0px;
+    width: auto;
 }
 
 .social-2 > * {
