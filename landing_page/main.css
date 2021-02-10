@@ -300,7 +300,7 @@ footer button {
             padding-bottom: 25px;
         }
 
-        /* placing button bellow input boxes */
+        /* placing button below input boxes */
         footer form {
             flex-wrap: wrap;
         }
