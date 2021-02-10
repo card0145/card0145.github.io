@@ -60,11 +60,12 @@ main {
     grid-template-rows: 1fr 1fr;
 }
 
+/* placing main h1 and subheading to left of grid */
 p {
     grid-column: 1/2;
     grid-row: 2/3
 }
-
+/* placing main form to the right of the grid */
 .container {
     grid-column: 3/4;
     grid-row: 1/3
@@ -320,7 +321,7 @@ footer button {
         footer button {
             width: 100%;
         }
-
+        /* hiding desktop social icons */
         .social {
             display: none;
         }
@@ -337,10 +338,4 @@ footer button {
             font-size: 40px;
         }
 
-
-
-
-
-
-
-    }
+     }
