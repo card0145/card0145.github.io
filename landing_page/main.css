@@ -26,7 +26,6 @@ footer {
     display: none;
 }
 
-
 h1 {
     margin: 0px;
 }
@@ -267,7 +266,6 @@ footer button {
             display: none;
         }
 
-
         main p {
             font-size: 17px;
         }
@@ -292,7 +290,6 @@ footer button {
         .g {
             flex-wrap: wrap;
         }
-
 
         footer {
             margin-top: 50px;
