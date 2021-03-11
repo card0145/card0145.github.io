@@ -1,8 +1,43 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px;
+    padding: 0px; */
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+    margin: 10px 0 10px 0;
+}
+
+p {
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: 200;
+}     
+
+button {
+    margin: 10px;
+    width: 220px;
+    border: none;
+    appearance: none;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    padding: 6px;
+    border-radius: 60px;
+    font-family: inherit;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.hero-container p {
+    font-size: 20px;
+}
+
  :root {
      --bg-color: #f2f2f2;
      --primary-color: #3c3b3a;
@@ -17,6 +52,7 @@ body {
     font-family: 'Raleway', sans-serif;
     
 }
+/* ----------------------------------------------------- */
 
 header {
     background-color: var(--primary-color);
@@ -54,6 +90,9 @@ nav {
     
 }
 
+/* ----------------------------------------------------- */
+
+
 .activities i {
     font-size: 40px;
     color: var(--primary-color);
@@ -62,4 +101,64 @@ nav {
 .activities h3 {
     color: var(--accent-color);
     font-weight: 400;
+}
+
+
+.school-img {
+    height: 200px;
+    background-image: url(../images/school.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.sa-container {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.sa-container p, h5 {
+    color: var(--bg-color);
+}
+
+.sa-container h5 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.simon-img {
+    height: 175px;
+    margin: auto;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--bg-color);
+}
+.entertaiment-img {
+    height: 200px;
+    background-image: url(../images/entertainment.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.discover-img {
+    height: 186px;
+}
+
+h2 {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 24px;
+    color: var(--accent-color);
+    font-weight: 400;
+
 }
