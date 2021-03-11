@@ -53,3 +53,13 @@ nav {
     height: 90px;
     
 }
+
+.activities i {
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+.activities h3 {
+    color: var(--accent-color);
+    font-weight: 400;
+}
