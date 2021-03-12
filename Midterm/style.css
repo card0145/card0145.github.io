@@ -22,7 +22,8 @@ p {
 
 button {
     margin: 10px;
-    width: 220px;
+    width: 300px;
+    height: 50px;
     border: none;
     appearance: none;
     background: var(--accent-color);
@@ -30,7 +31,7 @@ button {
     padding: 6px;
     border-radius: 60px;
     font-family: inherit;
-    font-size: 23px;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -92,6 +93,34 @@ nav {
 
 /* ----------------------------------------------------- */
 
+.hero-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-started {
+    margin: 30px 0 30px 0;
+    width: 273px;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-between;
+    grid-column-gap: 10px;
+}
+.bowling,
+.fitness,
+.rock,
+.indoor-court {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 .activities i {
     font-size: 40px;
@@ -103,15 +132,23 @@ nav {
     font-weight: 400;
 }
 
+/* ----------------------------------------------------- */
 
 .school-img {
     height: 200px;
     background-image: url(../images/school.jpg);
     background-size: cover;
     background-position: center;
-
 }
 
+.learn-more {
+    font-size: 20px;
+    width: 146px;
+    height: 45px;
+    
+
+}
+/* ----------------------------------------------------- */
 .sa-container {
     background-color: var(--primary-color);
     display: flex;
