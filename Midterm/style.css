@@ -145,7 +145,12 @@ nav {
     font-size: 20px;
     width: 146px;
     height: 45px;
-    
+    align-self: flex-end;
+}
+
+.ac-container {
+    display: flex;
+    flex-direction: column;
 
 }
 /* ----------------------------------------------------- */
@@ -162,6 +167,7 @@ nav {
 }
 
 .sa-container h5 {
+    padding-top: 20px;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
@@ -175,6 +181,9 @@ nav {
     border-width: 5px;
     border-color: var(--bg-color);
 }
+
+/* ----------------------------------------------------- */
+
 .entertaiment-img {
     height: 200px;
     background-image: url(../images/entertainment.jpg);
@@ -182,9 +191,19 @@ nav {
     background-position: center;
 }
 
-
 .discover-img {
     height: 186px;
+}
+.entertainment-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.entertainment-button {
+    font-size: 20px;
+    width: 146px;
+    height: 45px;
+    align-self: flex-end;
 }
 
 h2 {
@@ -197,5 +216,32 @@ h4 {
     font-size: 24px;
     color: var(--accent-color);
     font-weight: 400;
+
+}
+
+/* ===============================
+              TABLET             
+================================== */
+
+@media only screen and (min-width: 768px){
+
+header {
+    flex-direction: row;
+    height: 75px;
+}
+
+nav {
+flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
 
 }
