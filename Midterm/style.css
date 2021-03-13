@@ -3,6 +3,7 @@
     /* margin: 0px;
     padding: 0px; */
 }
+
 p,
 h1,
 h2,
@@ -18,7 +19,7 @@ p {
     line-height: 35px;
     font-size: 16px;
     font-weight: 200;
-}     
+}
 
 button {
     margin: 10px;
@@ -39,11 +40,11 @@ button {
     font-size: 20px;
 }
 
- :root {
-     --bg-color: #f2f2f2;
-     --primary-color: #3c3b3a;
-     --accent-color: #26a682;
- }
+:root {
+    --bg-color: #f2f2f2;
+    --primary-color: #3c3b3a;
+    --accent-color: #26a682;
+}
 
 [class*='container'] {
     padding: 35px;
@@ -51,11 +52,13 @@ button {
 
 body {
     font-family: 'Raleway', sans-serif;
-    
+
 }
+
 /* ----------------------------------------------------- */
 
 header {
+    padding: 0 35px 0 35px;
     background-color: var(--primary-color);
     height: 224px;
     display: flex;
@@ -63,7 +66,7 @@ header {
     align-items: center;
 }
 
-header a{
+header a {
     color: var(--bg-color);
     text-decoration: none;
 }
@@ -88,7 +91,7 @@ nav {
 
 .logo-img {
     height: 90px;
-    
+
 }
 
 /* ----------------------------------------------------- */
@@ -98,12 +101,18 @@ nav {
     flex-direction: column;
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
 .get-started {
     margin: 30px 0 30px 0;
     width: 273px;
     justify-self: center;
     align-self: center;
-    
+    font-size: 32px;
+
 }
 
 .activities {
@@ -112,6 +121,7 @@ nav {
     align-content: space-between;
     grid-column-gap: 10px;
 }
+
 .bowling,
 .fitness,
 .rock,
@@ -130,6 +140,16 @@ nav {
 .activities h3 {
     color: var(--accent-color);
     font-weight: 400;
+}
+
+.discover-img {
+    height: 186px;
+}
+
+.discover-img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* ----------------------------------------------------- */
@@ -153,6 +173,7 @@ nav {
     flex-direction: column;
 
 }
+
 /* ----------------------------------------------------- */
 .sa-container {
     background-color: var(--primary-color);
@@ -162,7 +183,8 @@ nav {
 
 }
 
-.sa-container p, h5 {
+.sa-container p,
+h5 {
     color: var(--bg-color);
 }
 
@@ -182,6 +204,12 @@ nav {
     border-color: var(--bg-color);
 }
 
+.simon-box {
+    display: flex;
+    flex-direction: column;
+
+}
+
 /* ----------------------------------------------------- */
 
 .entertaiment-img {
@@ -191,9 +219,7 @@ nav {
     background-position: center;
 }
 
-.discover-img {
-    height: 186px;
-}
+
 .entertainment-container {
     display: flex;
     flex-direction: column;
@@ -223,20 +249,89 @@ h4 {
               TABLET             
 ================================== */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 376px) {
 
-header {
-    flex-direction: row;
-    height: 75px;
+    [class*='container'] {
+        padding: 80px;
+    }
+
+    /* making a vertical nav */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 75px;
+    }
+
+    nav {
+        height: auto;
+        padding: 0;
+        flex-direction: row;
+        width: 200px;
+        justify-content: space-between;
+        align-items: flex-end;
+
+    }
+
+    .hero-container h1 {
+        font-size: 71px;
+    }
+
+    .hero-container p {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    /* placing activities in a row */
+    .activities {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .get-started {
+        width: 300px;
+        height: 65px;
+        font-size: 38px;
+    }
+
+    /* making the img larger */
+    .discover-img {
+        height: 277px;
+    }
+
+    button.learn-more {
+        height: 45px;
+        width: 230px;
+        font-size: 27px;
+    }
+
+    .entertainment-button {
+        height: 45px;
+        width: 230px;
+        font-size: 27px;
+    }
+
+
 }
 
-nav {
-flex-direction: row;
-}
+/* ===============================
+              DESKTOP             
+================================== */
 
+@media only screen and (min-width: 769px) {
 
+    .hero-container {
+        display: flex;
+        flex-direction: row;
+    }
 
+    .
 
+    .discover-img-box {
+        width: 500px;
+    }
 
 
 
