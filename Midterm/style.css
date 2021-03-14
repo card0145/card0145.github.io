@@ -99,6 +99,7 @@ nav {
 .hero-container {
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .hero-content {
@@ -249,7 +250,7 @@ h4 {
               TABLET             
 ================================== */
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 768px) {
 
     [class*='container'] {
         padding: 80px;
@@ -307,6 +308,20 @@ h4 {
         font-size: 27px;
     }
 
+    .sa-container {
+        flex-direction: row;
+    }
+
+    .simon-img {
+        
+    }
+
+
+    .simon-box {
+        padding-right: 52px;
+        justify-content: flex-start;
+    }
+
     .entertainment-button {
         height: 45px;
         width: 230px;
@@ -316,21 +331,109 @@ h4 {
 
 }
 
+@media only screen and (min-width: 900px) {
+
+}
+
 /* ===============================
               DESKTOP             
 ================================== */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 900px) {
 
+    header {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+
+
+    [class*='container'] {
+        padding: 140px;
+    }
     .hero-container {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
-    .
+    .hero-content {
+        max-width: 536px;
+        padding-right: 40px;
+        justify-content: space-around;
+    }
+
+    .discover-img {
+        max-width: 100%;
+        height: auto;
+        
+    }
 
     .discover-img-box {
-        width: 500px;
+        
+    }
+
+    /* justify button to the left */
+    .get-started {
+        align-self: flex-start;
+    }
+
+    .discover-ac {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 83px 140px 83px 140px;
+    }
+
+    .school-img {
+        height: auto;
+        width: 1000px;
+    }
+
+    .ac-container {
+        padding: 0 0 0 40px;
+    }
+
+    .sa-container {
+        padding-top: 58px;
+        padding-bottom: 58px;
+    }
+
+/* aligning heading and img in a row */
+
+    .simon-img {
+        margin: 0;
+    }
+
+    .simon-box {
+        flex-direction: row;
+    }
+
+    .sa-container h5 {
+        padding-left: 90px;
+        flex-grow: 2;
+        
+    }
+
+    .simon-box {
+        padding-right: 90px;
+    }
+
+
+
+    .discover-entertainment {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 83px 140px 83px 140px;
+    }
+
+    .entertainment-container {
+        padding: 0 0 0 40px;
+    }
+
+    .entertaiment-img {
+        height: auto;
+        width: 1000px;
     }
 
 
