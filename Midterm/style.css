@@ -91,6 +91,7 @@ header a {
 
 }
 
+/* creating vertical nav */
 nav {
     height: 100%;
     display: flex;
@@ -442,10 +443,6 @@ footer {
         
     }
 
-    .discover-img-box {
-        
-    }
-
     /* justify button to the left */
     .get-started {
         align-self: flex-start;
@@ -459,8 +456,8 @@ footer {
     }
 
     .school-img {
-        height: auto;
-        width: 1000px;
+        height: 337px;
+        width: 1702px;
     }
 
     .ac-container {
@@ -502,12 +499,13 @@ footer {
     }
 
     .entertainment-container {
-        padding: 0 0 0 40px;
+        padding: 0 40px 0 0;
+        order: -111;
     }
 
     .entertaiment-img {
-        height: auto;
-        width: 1000px;
+        height: 337px;
+        width: 2000px;
     }
 
 
