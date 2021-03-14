@@ -571,8 +571,10 @@ footer {
         height: 50px;
         font-size: 32px;
         background-color: var(--primary-color);
+        margin-top: 18px;
     }
 
     input.message-box {
         height: 100px;
+        border-radius: 10px;
     }
