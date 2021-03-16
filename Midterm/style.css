@@ -390,10 +390,6 @@ footer {
         font-size: 24px;
     }
 
-    .simon-img {
-        
-    }
-
     .simon-box {
         padding-right: 52px;
         justify-content: flex-start;
@@ -527,6 +523,16 @@ footer {
     font-size: 20px;
 }
 
+.contact-img {
+    height: 250px;
+    width: auto;
+    background-image: url(../images/contact-img.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
 .contact-form {
     background-color: var(--accent-color);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
@@ -542,7 +548,7 @@ footer {
 
     .contact-form h6 {
         color: var(--bg-color);
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .contact-form input {
@@ -557,7 +563,7 @@ footer {
 
     .contact-form label {
         font-size: 18px;
-        padding: 0 5px;
+        
         padding-top: 6px;
         color: var(--bg-color);
     }
@@ -578,3 +584,58 @@ footer {
         height: 100px;
         border-radius: 10px;
     }
+
+    .location-container h1 {
+        font-size: 40px;
+    }
+
+    .location-container h4 {
+        color: var(--primary-color);
+    }
+
+    .location-map {
+        margin: auto;
+    }
+    iframe {
+        width: 100%;
+    }
+
+    /* ===============================
+              Tablet             
+================================== */
+
+@media only screen and (min-width: 768px) {
+
+    [class*='container'] {
+        padding: 80px;
+    }
+.contact-container h1 {
+    font-size: 72px;
+}
+
+.contact-container p {
+    font-size: 24px;
+}
+
+.contact-form h6 {
+    font-size: 72px;
+}
+
+.contact-form label {
+    font-size: 24px;
+}
+
+.contact-form button{
+    width: 210px;
+}
+
+
+
+
+
+
+
+
+
+
+}
