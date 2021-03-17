@@ -451,8 +451,6 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-       
-
 
     }
 
@@ -489,9 +487,13 @@ footer {
         padding: 0 0 0 40px;
     }
 
-    .sa-container {
+    body .sa-container {
         padding-top: 58px;
         padding-bottom: 58px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
     }
 
 /* aligning heading and img in a row */
