@@ -720,6 +720,7 @@ footer {
 
 .about-banner {
     height: 200px;
+    
     background-image: url(../images/about.jpg);
     background-position: center;
     background-size: cover;
@@ -742,7 +743,7 @@ footer {
 
 .services-banner {
     height: 200px;
-    background-image: url(../images/services.jpg);
+    background: url(../images/services.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -794,11 +795,6 @@ footer {
     
 }
 
-
-
-
-
-
 /* stack logos in column */
 .logo-box{
     display: flex;
@@ -825,8 +821,197 @@ footer {
     height: 138px;
 }
 
-
 .pcl-logo,
 .cibc-logo {
     margin-bottom: 48px;
 }
+
+  /* ===============================
+              Tablet             
+================================== */
+
+@media only screen and (min-width: 768px) {
+
+    [class*='container'] {
+        padding: 80px;
+    }
+
+.about-page h1 {
+    font-size: 40px;
+}
+
+.construction-content h1 {
+    font-size: 72px;
+    margin-bottom: 35px;
+}
+
+.construction-content p {
+    font-size: 24px;
+    justify-content: center;
+    margin-bottom: 35px;
+
+}
+
+.about-banner h1,
+.services-banner h1 {
+    font-size: 56px;
+}
+
+.newsletter-container {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    flex-direction: row;
+}
+
+.newsletter-container button {
+    margin-left: 60px;
+    font-size: 24px;
+    width: 140px;
+}
+
+.newsletter-container p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+.bowling-container,
+.restaurant-container,
+.fitness-container,
+.rock-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.restaurant-img {
+    background-image: url(../images/bar.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    margin-right: 20px;
+    
+}
+
+.bowling-content,
+.restaurant-content,
+.fitness-content,
+.rock-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.bowling-img {
+    background-image: url(../images/bowling.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.fitness-img {
+    background-image: url(../images/fitness.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    margin-right: 20px;
+}
+
+.rock-img {
+    background-image: url(../images/climbing.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.thank-you-container h1 {
+    font-size: 56px;
+}
+
+    /* ===============================
+              Desktop             
+================================== */
+
+@media only screen and (min-width: 1200px) {
+
+    [class*='container'] {
+        padding: 140px;
+    }
+
+.construction-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.construction-img {
+    width: 100%;
+}
+
+.who,
+.what,
+.where {
+    width: 33%;
+}
+
+.who,
+.what {
+    margin-right: 78px;
+}
+
+.about-container {
+    display: flex;
+}
+
+.newsletter-container {
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.newsletter-container p {
+    font-size: 40px;
+
+}
+
+.newsletter-container button{
+    font-size: 27px;
+    width: 232px;
+    height: 45px;
+
+}
+
+.logo-box h1 {
+    width: 625px;
+    
+}
+.logo-box {
+    flex-direction: row;
+    align-items: center;
+}
+
+}
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+    
+
+
+
