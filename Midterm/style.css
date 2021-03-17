@@ -705,18 +705,101 @@ footer {
 ==============================
 ==============================*/
 
+.construction-content h1 {
+    font-size: 40px;
+}
+
+.construction-content p {
+    font-size: 20px;
+}
+
+.construction-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-banner {
+    height: 200px;
+    background-image: url(../images/about.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-banner h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.who,
+.what,
+.where {
+    padding-top: 20px;
+}
+
+.services-banner {
+    height: 200px;
+    background-image: url(../images/services.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-banner h1{
+    color: white;
+    font-size: 50px;
+}
+
+.bowling-container,
+.rock-container {
+    background-color: var(--bg-color);
+}
+.bowling-container,
+.fitness-container,
+.restaurant-container,
+.rock-container,
+.newsletter-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.newsletter-container {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-container p {
+    color: var(--bg-color);
+    font-size: 18px;
+}
+
+.newsletter-container button {
+    width: 140px;
+    font-size: 20px;
+
+}
+
+.thank-you-container h1 {
+    font-size: 56px;
+    text-align: center;
+    padding-bottom: 35px;
+    
+}
 
 
 
 
 
 
-
-
-
-
-
-
+/* stack logos in column */
 .logo-box{
     display: flex;
     flex-direction: column;
@@ -725,10 +808,12 @@ footer {
 }
 .sa-logo {
     width: 300px;
+    padding-bottom: 18px;
 }
 
 .algonquin-logo {
     width: 100px;
+    padding-bottom: 18px;
 }
 
 .pcl-logo {
@@ -738,4 +823,10 @@ footer {
 .cibc-logo {
     width: 156px;
     height: 138px;
+}
+
+
+.pcl-logo,
+.cibc-logo {
+    margin-bottom: 48px;
 }
