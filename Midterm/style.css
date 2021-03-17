@@ -191,6 +191,18 @@ nav a {
 
 .discover-img {
     height: 186px;
+    animation: appear 1.5s ease;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .discover-img-box {
@@ -855,6 +867,8 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
+/* making height adjustments */
 .sa-logo {
     width: 300px;
     padding-bottom: 18px;
@@ -927,8 +941,6 @@ footer {
     font-weight: 400;
 }
 
-
-
 .bowling-container,
 .restaurant-container,
 .fitness-container,
@@ -1000,7 +1012,17 @@ footer {
     justify-content: space-between;
 }
 
+.construction-content {
+    width: 50%;
+}
+
 .construction-img {
+    width: 50%;
+    margin-left: 20px;
+    
+}
+
+.construction-img img{
     width: 100%;
 }
 
@@ -1045,23 +1067,18 @@ footer {
     align-items: center;
 }
 
+.pcl-logo,
+.cibc-logo,
+.algonquin-logo,
+.sa-logo {
+    padding: 0;
+    margin: 0;
+}
+
 }
  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
 
 
     
