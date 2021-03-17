@@ -269,7 +269,7 @@ h4 {
 /* ----------------------------------------------------- */
 
 footer {
-    height: 125px;
+    height: 100px;
     background-color: var(--primary-color);
     color: var(--bg-color);
     display: grid;
@@ -695,6 +695,15 @@ footer {
         width: 50%;
         align-self: flex-end;
 
+}
+
+}
+
+/* ===========================
+==============================
+        About page
+==============================
+==============================*/
 
 
 
@@ -702,4 +711,31 @@ footer {
 
 
 
+
+
+
+
+
+
+.logo-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sa-logo {
+    width: 300px;
+}
+
+.algonquin-logo {
+    width: 100px;
+}
+
+.pcl-logo {
+    width: 200px;
+}
+
+.cibc-logo {
+    width: 156px;
+    height: 138px;
 }
