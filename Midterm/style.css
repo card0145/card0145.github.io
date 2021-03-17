@@ -985,7 +985,7 @@ footer {
 }
 
 .rock-img {
-    background-image: url(midterm/images/climbing.jpg);
+    background-image: url(/images/climbing.jpg);
     background-position: center;
     background-size: cover;
     width: 40%;
