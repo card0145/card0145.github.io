@@ -254,6 +254,10 @@ h5 {
     font-weight: 500;
 }
 
+.ac-content {
+    padding: 43px 80px;
+}
+
 .simon-img {
     height: 175px;
     margin: auto;
@@ -282,6 +286,7 @@ h5 {
 .entertainment-content {
     display: flex;
     flex-direction: column;
+    padding: 43px 80px;
  
 }
 
@@ -916,7 +921,6 @@ footer {
     font-size: 24px;
     justify-content: center;
     margin-bottom: 35px;
-
 }
 
 .about-banner h1,
