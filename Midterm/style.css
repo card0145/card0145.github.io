@@ -34,6 +34,7 @@ button {
     font-family: inherit;
     font-size: 32px;
     font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
 
 :root {
@@ -70,7 +71,7 @@ header a {
     text-decoration: none;
     transition: all ease-in-out 300ms;
 }
-
+/* adding nav link animation */
 header a::after{
     content: '';
     position: relative;
@@ -94,17 +95,22 @@ header a:hover::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
-
 }
 
 .logo-img {
     height: 90px;
-
 }
 
 .nav-home {
     font-weight: 600;
+}
+
+.nav-contact {
+    font-weight: 400;
+}
+
+.nav-about {
+    font-weight: 400;
 }
 
 /* creating vertical nav */
@@ -209,7 +215,7 @@ nav a {
     align-self: flex-end;
 }
 
-.ac-container {
+.ac-content {
     display: flex;
     flex-direction: column;
 
@@ -261,9 +267,10 @@ h5 {
 }
 
 
-.entertainment-container {
+.entertainment-content {
     display: flex;
     flex-direction: column;
+ 
 }
 
 .entertainment-button {
@@ -478,7 +485,7 @@ footer {
         width: 1702px;
     }
 
-    .ac-container {
+    .ac-content {
         padding: 0 0 0 40px;
     }
 
@@ -516,7 +523,7 @@ footer {
         padding: 83px 140px 83px 140px;
     }
 
-    .entertainment-container {
+    .entertainment-content {
         padding: 0 40px 0 0;
         order: -111;
     }
@@ -533,6 +540,19 @@ footer {
         Contact Page
 ==============================
 ==============================*/
+
+/* making nav button of current page bold */
+.nav-contact {
+    font-weight: 600;
+}
+
+.nav-home {
+    font-weight: 400;
+}
+
+.nav-about {
+    font-weight: 400;
+}
 
 .contact-container h1 {
     font-size: 50px;
@@ -723,6 +743,18 @@ footer {
         About page
 ==============================
 ==============================*/
+
+.nav-contact {
+    font-weight: 400;
+}
+
+.nav-home {
+    font-weight: 400;
+}
+
+.nav-about {
+    font-weight: 600;
+}
 
 .construction-content h1 {
     font-size: 40px;
