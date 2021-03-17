@@ -68,8 +68,27 @@ header {
 header a {
     color: var(--bg-color);
     text-decoration: none;
+    transition: all ease-in-out 300ms;
 }
 
+header a::after{
+    content: '';
+    position: relative;
+    display: block;
+    height: 4px;
+    width: 0%;
+    background-color: var(--accent-color);
+    bottom: -4px;  
+    transition: all ease-in-out 300ms;
+}
+
+header a:hover {
+    color: var(--accent-color);
+}
+
+header a:hover::after {
+    width: 100%;
+}
 .nav-container {
     height: 224px;
     display: flex;
