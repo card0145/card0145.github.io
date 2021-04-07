@@ -38,7 +38,7 @@
 
 <body>
 
-    <div class="container pb-4">
+    <div class="container mb-5">
         <h1 class="pt-4 pb-4">Bootstrap 101</h1>
         <p>
             Bootstrap is a free open-source css framework developed by Mark Otto and Jacob Thornton. It was first
@@ -188,7 +188,7 @@
 <div class="container">
     <h2 class="text-success mb-4">Components</h2>
     <p class="pb-4">
-        Effortlessly build your website using Bootstrap's extensive list of pre-built components. They are easily customizable by using modifier classes. .
+        Effortlessly build your website using Bootstrap's extensive list of pre-built components. They can be easily customized by using modifier classes.
     </p>
 
     <h4>Cards</h4>
@@ -196,7 +196,7 @@
          Neatly organize and display all types of content using Bootstrap's card component.
     </p>
 
-    <div class="container">
+    <div class="container mb-4">
         <div class="row justify-content-center">
             <div class="card m-4 border-success border-2" style="width:18rem">
                 <img src="images/mark.jpg" class="img-fluid" alt="Card image">
@@ -209,9 +209,10 @@
 
             <div class="card m-4 border-success border-2" style="width:18rem">
                 <img src="images/jacob.jpg" class="img-fluid" alt="Card image">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column align-content-center">
                     <h4 class="card-title text-center">Jacob Thornton</h4>
                     <p class="card-text text-center">The other creator of Bootstrap. Wore glasses at some point.</p>
+                    <a href="#" class="btn btn-success col-8 align-self-center">Tell me more!</a>
                 </div>
             </div>
         </div>
@@ -259,6 +260,26 @@
 
 
     </div>
+
+    <h4 class="mb-4">Dropdowns</h4>
+    <p>
+        Use the dropdown plugin to add a dropdown list to any button or link. 
+    </p>
+
+    <div class="container d-flex justify-content-center">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+    </div>
+
+
 
 
 
