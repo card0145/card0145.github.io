@@ -51,6 +51,7 @@ h2,
 h3 {
     font-family: 'Krona One', sans-serif; 
 }
+
 /* Creating the basic button style */
 button {
     margin: 10px;
@@ -124,3 +125,23 @@ input#message.message-box {
     
 }
 
+.tablet-input {
+    background-color: yellowgreen;
+ }
+
+@media only screen and (min-width: 768px) {
+
+    [class*='container'] {
+        padding: 80px;
+    }
+
+    .tablet-input {
+       background-color: yellowgreen;
+    }
+
+
+
+
+
+
+}
