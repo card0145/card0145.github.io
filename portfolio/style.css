@@ -68,6 +68,8 @@ button {
 
 }
 
+/* ------- Header -------- */
+
 .logo {
     width: 100px;
 }
@@ -89,6 +91,7 @@ header .box {
     display: flex;
     padding: 10px 1px;
 }
+/* ==================== CONTACT PAGE ==================== */
 
 .contact-container {
     display: flex;
@@ -178,4 +181,40 @@ input#message.message-box {
     }
 
 
+}
+
+/* ====================== ABOUT ====================== */
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content h4 {
+    color: var(--accent-color);
+}
+
+.about-content h5 {
+    padding: 0px;
+    margin: 10px;
+}
+.about-container img{
+    width: 400px;
+
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.skills-content, .edu-content, .personal-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
