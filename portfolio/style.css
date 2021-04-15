@@ -105,9 +105,16 @@ header .box {
     display: flex;
     flex-direction: column;
 }
+
 .contact-form input {
     padding: 10px 5px;
     margin: 10px 0px;
+    font-family: inherit;
+}
+
+.tablet-input {
+    display: flex;
+    flex-direction: column;
 }
 
 input#message.message-box {
@@ -121,27 +128,54 @@ input#message.message-box {
 .footer-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center; 
 }
 
-.tablet-input {
-    background-color: yellowgreen;
- }
+.footer-icons {
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icons i {
+    font-size: 20px;
+}
+
 
 @media only screen and (min-width: 768px) {
 
     [class*='container'] {
-        padding: 80px;
+        padding: 0px 80px;
     }
 
+/* adding name and email input side by side */
     .tablet-input {
-       background-color: yellowgreen;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
     }
 
+    .tablet-input input {
+        flex-grow: 1;
+    }
 
+    input#email {
+        margin-left: 20px;
 
+    }
 
+}
+
+@media only screen and (min-width: 1200px) {
+
+    [class*='container'] {
+        padding: 0px 170px;
+    }
+
+    .contact-container {
+        padding-top: 50px;
+    }
 
 
 }
