@@ -256,7 +256,7 @@ header a:hover::after {
     flex-direction: column;
     align-items: center;
 }
-
+/* Stacking the about info in a column */
 .skills-content, .edu-content, .personal-content {
 
     display: flex;
@@ -304,6 +304,7 @@ header a:hover::after {
     .hi-box {
         align-items: flex-start;
         padding-right: 30px;
+        max-width: 480px;
     }
 
     /* displaying information in a row */
