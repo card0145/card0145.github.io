@@ -183,8 +183,38 @@ input#message.message-box {
 
 }
 
+/* adding nav link animation */
+header a::after{
+    content: '';
+    position: relative;
+    display: block;
+    height: 4px;
+    width: 0%;
+    background-color: var(--accent-color);
+    bottom: -4px;  
+    transition: all ease-in-out 300ms;
+}
+
+header a:hover {
+    color: var(--accent-color);
+}
+
+header a:hover::after {
+    width: 100%;
+}
+
 /* ====================== ABOUT ====================== */
 
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 .about-container {
     display: flex;
@@ -204,6 +234,7 @@ input#message.message-box {
 .about-container img{
     width: 400px;
     margin: 15px;
+    animation: appear 1.5s ease;
 
 }
 
@@ -237,6 +268,10 @@ input#message.message-box {
 
     [class*='container'] {
         padding: 0px 80px;
+    }
+
+    .about-content h4 {
+        font-size: 25px;
     }
 
 }
@@ -284,13 +319,19 @@ input#message.message-box {
     .edu-content,
     .personal-content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 35px 0px;
     }
 
     .about-content h4 {
-        margin: 16px;
+        margin: 15px;
         font-size: 25px;
         
+    }
+
+    .about-content p{
+        grid-column: 3/7;
+
     }
 
 
