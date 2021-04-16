@@ -48,7 +48,8 @@ color: var(--primary-color);
 
 h1,
 h2,
-h3 {
+h3,
+h5 {
     font-family: 'Krona One', sans-serif; 
 }
 
@@ -68,6 +69,8 @@ button {
 
 }
 
+
+/* This animation makes elements appear */
 @keyframes appear2 {
     0% {
         opacity: 0;
@@ -100,6 +103,56 @@ header .box {
     display: flex;
     padding: 10px 1px;
 }
+
+/* adding nav link animation */
+.box a::after{
+    content: '';
+    position: relative;
+    display: block;
+    height: 4px;
+    width: 0%;
+    background-color: var(--accent-color);
+    bottom: -4px;  
+    transition: all ease-in-out 300ms;
+}
+
+header a:hover {
+    color: var(--accent-color);
+}
+
+header a:hover::after {
+    width: 100%;
+}
+
+
+/* =================== LANDING PAGE ===================== */
+
+.landing-container h5 {
+
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.landing-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==================== CONTACT PAGE ==================== */
 
 .contact-container {
@@ -116,6 +169,7 @@ header .box {
 .contact-form {
     display: flex;
     flex-direction: column;
+  
 }
 
 .contact-form input {
@@ -190,30 +244,11 @@ input#message.message-box {
     }
 
     .contact-form {
-        max-width: 500px;
+        max-width: 1000px;
+        margin: auto;
     }
 
 
-}
-
-/* adding nav link animation */
-header a::after{
-    content: '';
-    position: relative;
-    display: block;
-    height: 4px;
-    width: 0%;
-    background-color: var(--accent-color);
-    bottom: -4px;  
-    transition: all ease-in-out 300ms;
-}
-
-header a:hover {
-    color: var(--accent-color);
-}
-
-header a:hover::after {
-    width: 100%;
 }
 
 /* ====================== ABOUT ====================== */
