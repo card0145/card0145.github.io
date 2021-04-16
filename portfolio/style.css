@@ -339,13 +339,40 @@ header a:hover::after {
 
 /* ================== WORK ======================= */
 
+.work-container h1{
+    margin: auto;
+    
+}
+
 .work-box {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .work-box-1 {
-    background-image: url(/images/robocat-crop.jpg);
+    margin: 20px;
+    background-image: url(images/vampironica.svg);
     background-size: cover;
     background-position: center;
+    width: 100%;
+    height: 250px;
+}
+
+.work-box-2 {
+    margin: 20px;
+    background-image: url(images/robocat.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+}
+
+.work-box-3 {
+    margin: 20px;
+    background-image: url(images/loading-mockup.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
 }
