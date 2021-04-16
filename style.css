@@ -189,6 +189,10 @@ input#message.message-box {
         padding-top: 50px;
     }
 
+    .contact-form {
+        max-width: 500px;
+    }
+
 
 }
 
