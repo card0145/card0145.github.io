@@ -335,8 +335,17 @@ header a:hover::after {
 
     }
 
+}
 
+/* ================== WORK ======================= */
 
+.work-box {
+    display: flex;
+    flex-direction: column;
+}
 
-
+.work-box-1 {
+    background-image: url(/images/robocat-crop.jpg);
+    background-size: cover;
+    background-position: center;
 }
