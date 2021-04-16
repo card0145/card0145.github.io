@@ -123,7 +123,11 @@ header a:hover {
 header a:hover::after {
     width: 100%;
 }
+/* ------ Footer -------- */
 
+footer {
+    margin-top: 40px;
+}
 
 /* =================== LANDING PAGE ===================== */
 
@@ -141,14 +145,28 @@ header a:hover::after {
     align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
 
+    [class*='container'] {
+        padding: 0px 80px;
+    }
+}
 
+@media only screen and (min-width: 1200px) {
 
+    [class*='container'] {
+        padding: 0px 170px;
+    }
 
+    .landing-container h5 {
 
+        padding-top: 100px;
+        
+    
+    }
 
-
-
+    
+}
 
 
 
@@ -243,9 +261,17 @@ input#message.message-box {
         padding-top: 50px;
     }
 
+    /* making sure the contact form doesnt stretch too much */
     .contact-form {
         max-width: 1000px;
         margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    [class*='container'] {
+        padding: 0px 170px;
     }
 
 
@@ -399,6 +425,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .work-box-1 {
