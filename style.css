@@ -5,7 +5,7 @@
 }
 
 :root {
-    --bg-color: #f2f2f2;
+    --bg-color: #FFF8F0;
     --primary-color: #3c3b3a;
     --accent-color: #D94B29;
 }
@@ -23,7 +23,7 @@
 
 html, body {
     height: 100%;
-    background-color: #FFF8F0;
+    background-color: var(--bg-color);
   }
 
   body {
@@ -87,6 +87,7 @@ a.button {
     text-align: center;
 
 }
+
 
 
 /* This animation makes elements appear */
@@ -164,6 +165,13 @@ footer {
     align-items: center;
 }
 
+@media only screen and (min-width: 470px) {
+
+    .landing-container h5 {
+        padding-top: 80px;
+    }
+}
+
  
 @media only screen and (min-width: 768px) {
 
@@ -171,7 +179,13 @@ footer {
     [class*='container'] {
         padding: 0px 80px;
     }
+
+    .landing-container h5 {
+        padding-top: 80px;
+    }
 }
+
+
 
 @media only screen and (min-width: 1200px) {
 
@@ -206,7 +220,6 @@ footer {
 .contact-form {
     display: flex;
     flex-direction: column;
-  
 }
 
 .contact-form input {
@@ -325,11 +338,11 @@ input#message.message-box {
     padding: 0px;
     margin: 10px;
 }
+
 .about-container img{
     width: 400px;
     margin: 15px;
     animation: appear 1.5s ease;
-
 }
 
 .about-box {
@@ -350,6 +363,7 @@ input#message.message-box {
     flex-direction: column;
     align-items: center;
 }
+
 /* Stacking the about info in a column */
 .skills-content, .edu-content, .personal-content {
 
@@ -432,8 +446,6 @@ input#message.message-box {
 }
 
 /* ================== WORK ======================= */
-
-
 
 h1 {
     text-align: center;
