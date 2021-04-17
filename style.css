@@ -7,7 +7,7 @@
 :root {
     --bg-color: #f2f2f2;
     --primary-color: #3c3b3a;
-    --accent-color: #e7673c;
+    --accent-color: #D94B29;
 }
 
 *,
@@ -23,6 +23,7 @@
 
 html, body {
     height: 100%;
+    background-color: #FFF8F0;
   }
 
   body {
@@ -54,7 +55,7 @@ h5 {
 }
 
 /* Creating the basic button style */
-button {
+    button {
     margin: 10px;
     width: 150px;
     height: 45px;
@@ -66,6 +67,24 @@ button {
     border-radius: 60px;
     font-family: inherit;
     font-size: 18px;
+
+}
+
+a.button {
+    margin: 10px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    appearance: none;
+    background: var(--accent-color);
+    color: white;
+    padding: 4px;
+    padding-top: 10px;
+    border-radius: 60px;
+    font-family: inherit;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
 
 }
 
@@ -145,8 +164,10 @@ footer {
     align-items: center;
 }
 
+ 
 @media only screen and (min-width: 768px) {
 
+    /* setting the margins for the tablet screen size */
     [class*='container'] {
         padding: 0px 80px;
     }
@@ -154,18 +175,16 @@ footer {
 
 @media only screen and (min-width: 1200px) {
 
+    /* setting the margins for the desktop screen size */
     [class*='container'] {
         padding: 0px 170px;
     }
 
+
+    /* bringing the landing page content lower */
     .landing-container h5 {
-
         padding-top: 100px;
-        
-    
     }
-
-    
 }
 
 
