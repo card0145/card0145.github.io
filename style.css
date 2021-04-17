@@ -1,5 +1,5 @@
 
-
+/* setting the margins for mobile screen */
 [class*='container'] {
     padding: 0px 20px;
 }
@@ -424,6 +424,7 @@ input#message.message-box {
        justify-content: center;
     }
 
+    /* making a grid to set information side by side */
     .skills-content,
     .edu-content,
     .personal-content {
@@ -449,7 +450,6 @@ input#message.message-box {
 
 h1 {
     text-align: center;
-    
 }
 
 .work-box {
@@ -483,7 +483,7 @@ h1 {
 
 .work-box-3 {
     margin: 20px;
-    background-image: url(images/loading-mockup.png);
+    background-image: url(images/loading-mockup-white.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
