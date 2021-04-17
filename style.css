@@ -1,4 +1,3 @@
-
 /* setting the margins for mobile screen */
 [class*='container'] {
     padding: 0px 20px;
@@ -12,8 +11,7 @@
 
 *,
 *:before,
-*:after
-    {
+*:after {
     box-sizing: border-box;
     /* margin: 0px;
     padding: 0px; */
@@ -21,29 +19,30 @@
 
 /* Setting the footer to the bottom of the page */
 
-html, body {
+html,
+body {
     height: 100%;
     background-color: var(--bg-color);
-  }
+}
 
-  body {
+body {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  main {
+main {
     flex: 1 0 auto;
-  }
+}
 
-  footer {
-      flex-shrink: 0;
-  }
+footer {
+    flex-shrink: 0;
+}
 
 
 
 body {
-font-family: 'Montserrat', sans-serif;
-color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
 }
 
 
@@ -51,11 +50,11 @@ h1,
 h2,
 h3,
 h5 {
-    font-family: 'Krona One', sans-serif; 
+    font-family: 'Krona One', sans-serif;
 }
 
 /* Creating the basic button style */
-    button {
+button {
     margin: 10px;
     width: 150px;
     height: 45px;
@@ -95,6 +94,7 @@ a.button {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -108,7 +108,7 @@ a.button {
 
 header a {
     text-decoration: none;
-    padding: 0px 20px ;
+    padding: 0px 20px;
     color: var(--primary-color);
 }
 
@@ -125,14 +125,14 @@ header .box {
 }
 
 /* adding nav link animation */
-.box a::after{
+.box a::after {
     content: '';
     position: relative;
     display: block;
     height: 4px;
     width: 0%;
     background-color: var(--accent-color);
-    bottom: -4px;  
+    bottom: -4px;
     transition: all ease-in-out 300ms;
 }
 
@@ -143,6 +143,7 @@ header a:hover {
 header a:hover::after {
     width: 100%;
 }
+
 /* ------ Footer -------- */
 
 footer {
@@ -159,7 +160,7 @@ footer {
     margin-top: 100px;
 }
 
-.landing-container{
+.landing-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,7 +174,7 @@ footer {
     }
 }
 
- 
+
 @media only screen and (min-width: 768px) {
 
     /* setting the margins for the tablet screen size */
@@ -245,7 +246,7 @@ input#message.message-box {
 .footer-container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .footer-icons {
@@ -265,7 +266,7 @@ input#message.message-box {
         padding: 0px 80px;
     }
 
-/* adding name and email input side by side */
+    /* adding name and email input side by side */
     .tablet-input {
         display: flex;
         flex-direction: row;
@@ -318,6 +319,7 @@ input#message.message-box {
         opacity: 0;
         transform: translateY(-40px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px);
@@ -340,7 +342,7 @@ input#message.message-box {
     margin: 10px;
 }
 
-.about-container img{
+.about-container img {
     width: 400px;
     margin: 15px;
     animation: appear 1.5s ease;
@@ -369,6 +371,7 @@ input#message.message-box {
 .skills-content {
     width: 100%;
 }
+
 /* adding more space to seperate titles */
 .skills-content p {
     line-height: 2;
@@ -377,7 +380,9 @@ input#message.message-box {
 
 
 /* Stacking the about info in a column */
-.skills-content, .edu-content, .personal-content {
+.skills-content,
+.edu-content,
+.personal-content {
 
     display: flex;
     flex-direction: column;
@@ -410,6 +415,7 @@ input#message.message-box {
     .about-container {
         padding-top: 50px;
     }
+
     /* placing h1 and text next to image */
     .about-box {
         display: flex;
@@ -428,12 +434,14 @@ input#message.message-box {
     }
 
     /* displaying information in a row */
-    .skills-content, .edu-content, .personal-content {
+    .skills-content,
+    .edu-content,
+    .personal-content {
 
         display: flex;
         flex-direction: row;
-       align-items: flex-start;
-       justify-content: center;
+        align-items: flex-start;
+        justify-content: center;
     }
 
     /* making a grid to set information side by side */
@@ -448,10 +456,10 @@ input#message.message-box {
     .about-content h4 {
         margin: 15px;
         font-size: 25px;
-        
+
     }
 
-    .about-content p{
+    .about-content p {
         grid-column: 3/7;
 
     }
@@ -480,7 +488,7 @@ h1 {
     width: 100%;
     height: 250px;
     animation: appear2 2s ease;
-    
+
 }
 
 .work-box-2 {
@@ -521,7 +529,7 @@ h1 {
 
     .work-box {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
 
     }
