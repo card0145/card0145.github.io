@@ -364,6 +364,17 @@ input#message.message-box {
     align-items: center;
 }
 
+/* stretching the content to meet margins */
+.skills-content {
+    width: 100%;
+}
+/* adding more space to seperate titles */
+.skills-content p {
+    line-height: 2;
+}
+
+
+
 /* Stacking the about info in a column */
 .skills-content, .edu-content, .personal-content {
 
@@ -462,7 +473,7 @@ h1 {
 
 .work-box-1 {
     margin: 20px;
-    background-image: url(images/vampironica.svg);
+    background-image: url(images/vampironica.png);
     background-size: cover;
     background-position: center;
     width: 100%;
